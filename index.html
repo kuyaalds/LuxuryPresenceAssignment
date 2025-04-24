@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/three.min.js"></script>
+    <link rel="icon" href="css/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Marci Metzger Homes</title>
+</head>
+
+<body>
+
+    <div class="intro">
+        <img class="logo" src="css/images/logo.png" alt="logo" />
+    </div>
+
+
+    <div class="burger-menu">
+        <div class="arrow-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-angles-right"></i>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://marcimetzger.com/listings">Listings</a></li>
+                <li><a href="https://marcimetzger.com/lets-move">Let's Move</a></li>
+                <li><a href="https://marcimetzger.com/about-us">About Us</a></li>
+                <div class="section"></div>
+                <li><a href="https://www.facebook.com/MarciHomes/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/marciandlauren_nvrealtors/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/marci-metzger-30642496/"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li><a href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump"><i
+                            class="fab fa-yelp"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="map-container">
+        <div class="map-overlay"></div>
+    </div>
+
+    <div class="container">
+        <span class="title">THE RIDGE REALTY GROUP</span><br>
+        <span class="title-1">PAHRUMP REALTOR</span>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Top Residential Sales Last 5 Years</h1>
+            <p class="midtitle"> We helped nearly 90 clients in 2021,</p>
+            <p class="description">
+                and closed 28.5 million in sales! Our team works
+                hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve
+                our best, & we want to make sure our best is better every year.
+            </p>
+        </div>
+
+        <div class="image-layer-wrapper">
+            <img src="css/images/img (1).png" alt="Background" class="image bg-img">
+            <img src="css/images/img (1).png" alt="Foreground" class="image fg-img">
+        </div>
+    </div>
+    <div class="hero-section" style="background-color: #444;">
+        <div class="image-layer-wrapper">
+            <img src="css/images/img (2).png" alt="Background" class="image bg-img">
+            <img src="css/images/img (2).png" alt="Foreground" class="image fg-img">
+        </div>
+        <div class="hero-text">
+            <h1 style="color: #fff;">Don't Just List it... </h1>
+            <p class="midtitle" style="color: #ffffff;"> Get it SOLD!</h1>
+            <p class="description" style="color: #ffffff;">
+                We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting
+                you top dollar for your home.
+            </p>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Guide to Buyers</h1>
+            <p class="midtitle"> Nobody knows the market like we do</h1>
+            <p class="description">
+                Enjoy having a pro at your service. Market analysis, upgrades lists,
+                contractors on speed dial, & more!
+            </p>
+        </div>
+
+        <div class="image-layer-wrapper">
+            <img src="css/images/img (3).png" alt="Background" class="image bg-img">
+            <img src="css/images/img (3).png" alt="Foreground" class="image fg-img">
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="title">Our Services</span><br>
+        <span class="title-1">Your vision, our expertise</span>
+    </div>
+    <div class="hero-section">
+        <div class="image-container">
+            <div class="image-box">
+                <img src="css/images/services (1).png" alt="Image 1">
+                <div class="image-text">
+                    <h3>Real Estate Done Right</h3>
+                    <p>Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your
+                        residence, looking at investment properties, or just curious about the markets, our team ensures
+                        you
+                        get the best experience possible!</p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="css/images/services (2).png" alt="Image 2">
+                <div class="image-text">
+                    <h3>Commercial & Residential</h3>
+                    <p>Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers?
+                        Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you
+                        find where to put your hard-earned dollars.</p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="css/images/services (3).png" alt="Image 3">
+                <div class="image-text">
+                    <h3>Rely on Expertise</h3>
+                    <p>If you have questions about affordability, credit, and loan options, trust us to connect you with
+                        the right people to get the answers you need in a timely fashion. We make sure you feel
+                        confident
+                        and educated every step of the way.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="popup-overlay" id="popup-overlay"></div>
+
+    <div class="container">
+        <span class="title">Featured Properties</span><br>
+        <span class="title-1">Search your dream space</span>
+    </div>
+
+    <div class="map-container">
+
+        <img src="css/images/minimap.jpg" alt="Map" class="map-image">
+
+        <div class="pin" style="top: 60%; left: 14%;" data-image="css/images/photo (1).png">
+            <img src="css/images/photo (1).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="pin" style="top: 46%; left: 15%;" data-image="css/images/photo (2).png">
+            <img src="css/images/photo (2).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="pin" style="top: 20%; left: 15%;" data-image="css/images/photo (3).png">
+            <img src="css/images/photo (3).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="pin" style="top: 65%; left: 67%;" data-image="css/images/photo (4).png">
+            <img src="css/images/photo (4).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="pin" style="top: 70%; left: 67.5%;" data-image="css/images/photo (5).png">
+            <img src="css/images/photo (5).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="pin" style="top: 68%; left: 72%;" data-image="css/images/photo (6).png">
+            <img src="css/images/photo (6).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="pin" style="top: 97%; left: 32%;" data-image="css/images/photo (7).png">
+            <img src="css/images/photo (7).png" alt="Thumb" class="pin-thumb">
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="" alt="Popup Image" id="popup-image">
+            <span class="close" onclick="closePopup()">×</span>
+        </div>
+    </div>
+
+    <div class="hero-section" style="padding: 50px;">
+        <div class="hero-text">
+            <div class="search-container">
+                <h1>Search Listings</h1>
+                <form class="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location">
+                                <option value="">Select a location</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select id="type">
+                                <option value="">Select a type</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sort">Sort By</label>
+                            <select id="sort">
+                                <option value="">Newest</option>
+                                <option value="">Oldest</option>
+                                <option value="">Least Expensive to Most</option>
+                                <option value="">Most Expensive to Most</option>
+                                <option value="">Bedrooms (Low to High)</option>
+                                <option value="">Bedrooms (High to Low)</option>
+                                <option value="">Bathrooms (Low to High)</option>
+                                <option value="">Bathrooms (High to Low)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms">
+                                <option value="">Any Number</option>
+                                <option value="">Studio</option>
+                                <option value="">+1</option>
+                                <option value="">+2</option>
+                                <option value="">+3</option>
+                                <option value="">+4</option>
+                                <option value="">+5</option>
+                                <option value="">+6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="baths">Baths</label>
+                            <select id="baths">
+                                <option value="">Any Number</option>
+                                <option value="">Studio</option>
+                                <option value="">+1</option>
+                                <option value="">+2</option>
+                                <option value="">+3</option>
+                                <option value="">+4</option>
+                                <option value="">+5</option>
+                                <option value="">+6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="min-price">Min Price</label>
+                            <input type="text" id="min-price" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="max-price">Max Price</label>
+                            <input type="text" id="max-price" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="search-btn">Search Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="image-layer-wrapper">
+            <img src="css/images/photo (8).png" alt="Background" class="image bg-img">
+            <img src="css/images/photo (8).png" alt="Foreground" class="image fg-img">
+        </div>
+
+    </div>
+
+    <div class="call-now-wrapper">
+        <div class="thought-bubble">Hi, I am Marci Metzger!</div>
+
+        <div class="call-now-group">
+            <a href="tel:2069196886">
+                <div class="call-now-btn">
+                    <img src="css/images/marci.jpg" alt="Call" />
+                    <i class="fas fa-phone-alt call-icon"></i>
+                </div>
+            </a>
+            <div class="image-caption">206-919-6886</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="title">Contact Us</span><br>
+        <span class="title-1">Get in touch with us</span>
+    </div>
+
+    <div class="container-end">
+        <div class="left-column">
+            <a href="https://marcimetzger.com/about-us" target="_blank">
+                <img src="css/images/marci.jpg" alt="Call" class="circle-img" />
+            </a>
+            <div class="agent-details">
+                <h2>Marci Metzger - THE RIDGE REALTY GROUP</h2>
+                <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                <p><strong>Phone:</strong> (206) 919-6886</p>
+                <div class="hours">
+                    <p><strong>Office Hours:</strong></p>
+                    <p>Open today: 08:00 a.m. – 07:00 p.m.</p>
+                    <p>Open daily 8:00 a.m. - 7:00 p.m.</p>
+                    <p><em>Appointments outside office hours available upon request. Just call!</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="form-container">
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h1>Send a message</h1>
+                        <form class="fancy-form">
+                            <div class="input-wrapper">
+                                <input type="text" id="name" required>
+                                <span class="placeholder">Name</span>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="email" id="email" required>
+                                <span class="placeholder">Email</span>
+                            </div>
+                            <div class="input-wrapper">
+                                <textarea id="message" rows="4" required></textarea>
+                                <span class="placeholder">Message</span>
+                            </div>
+                            <button type="">Send</button> or <a href="https://wa.me/14259412560" target="_blank"
+                                style="text-decoration: none;">
+                                <button type="button" class="whatsApp">
+                                    Message us on WhatsApp
+                                    <i class="fab fa-whatsapp" style="color: #33ad33; font-size: 22px;"></i>
+                                </button>
+                            </a>
+                        </form>
+                        <div class="text-1" style="color:#444; padding-top: 20px; font-size: 12px;">This site is
+                            protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5382.057402768837!2d-115.98581238863476!3d36.204699842797756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8a4a5d778f6b3%3A0x9e038b8e2f29583f!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!5e0!3m2!1sen!2sph!4v1713960000000"
+        width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <footer>
+        <div class="brands">
+            <div>
+                <img src="css/images/brand (1).png">
+            </div>
+            <div>
+                <img src="css/images/brand (2).png">
+            </div>
+            <div>
+                <img src="css/images/brand (3).png">
+            </div>
+            <div>
+                <img src="css/images/brand (4).png">
+            </div>
+        </div>
+        Copyright © 2023 Marci METZGER Homes - All Rights Reserved
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
