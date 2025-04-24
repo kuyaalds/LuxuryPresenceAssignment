@@ -6,21 +6,21 @@
 
 @font-face {
   font-family: 'Moontime';
-  src: url('/css/fonts/moontime.ttf') format('truetype');
+  src: url('https://kuyaalds.github.io/LuxuryPresenceAssignment/css/fonts/moontime.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('/css/fonts/quicksand.ttf') format('truetype');
+  src: url('https://kuyaalds.github.io/LuxuryPresenceAssignment/css/fonts/quicksand.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poiret';
-  src: url('/css/fonts/poiretone.ttf') format('truetype');
+  src: url('https://kuyaalds.github.io/LuxuryPresenceAssignment/css/fonts/poiretone.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -137,7 +137,7 @@ body {
 
 .burger-menu:hover .menu {
   transform: translateX(0);
-  background: url('/css/images/sidebarL.png') no-repeat center center;
+  background: url('https://kuyaalds.github.io/LuxuryPresenceAssignment/css/images/sidebarL.png') no-repeat center center;
   background-size: cover;
 }
 
