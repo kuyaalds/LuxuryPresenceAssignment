@@ -13,7 +13,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(15, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setClearColor(0x000000, 0);
-const mapTexture = new THREE.TextureLoader().load('https://username.github.io/LuxuryPresenceAssignment/css/images/map.jpg');
+const mapTexture = new THREE.TextureLoader().load('https://kuyaalds.github.io/LuxuryPresenceAssignment/css/images/map.jpg');
 const mapGeometry = new THREE.PlaneGeometry(10, 10);
 const mapMaterial = new THREE.MeshBasicMaterial({ map: mapTexture });
 const mapMesh = new THREE.Mesh(mapGeometry, mapMaterial);
